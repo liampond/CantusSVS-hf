@@ -1,0 +1,33 @@
+# Web app
+streamlit
+
+# Core libraries needed for synthesis/inference
+numpy<2.0.0
+scipy>=1.10.0
+librosa<0.10.0
+resampy
+pyyaml
+omegaconf
+matplotlib
+h5py
+einops
+lightning~=2.3.0
+
+# DiffSinger requirements
+pyworld==0.3.4
+
+# Optional utilities / debugging
+tqdm
+pandas
+lxml
+MonkeyType==23.3.0
+pytest
+
+# Torch + TorchMetrics (CPU only)
+torch==2.1.0+cpu
+torchmetrics
+# Optional: include torchvision if you're using any image-related utilities
+# torchvision==0.16.0+cpu
+
+# CPU wheel source for torch
+--extra-index-url https://download.pytorch.org/whl/cpu

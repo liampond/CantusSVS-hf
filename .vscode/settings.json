@@ -1,0 +1,6 @@
+{
+  "python.defaultInterpreterPath": "webapp/venv/bin/python",
+  "python.analysis.extraPaths": ["./inference"],
+  "python.analysis.indexing": true,
+  "python.analysis.typeCheckingMode": "off"
+}
