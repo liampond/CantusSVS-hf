@@ -11,7 +11,11 @@
 
 ## About CantusSVS
 
-CantusSVS is a singing voice synthesis tool that automatically generates audio playback for the Latin chants in Cantus. You can access CantusSVS directly in the browser here [**https://huggingface.co/spaces/liampond/CantusSVS-hf**](https://huggingface.co/spaces/liampond/CantusSVS-hf). For training and inferencing, we use **DiffSinger**, a diffusion-based singing voice synthesis model described in the paper below:
+**Projet finale pour MUS6329X: Projects en informatique musicale à l'Université de Montréal avec Prof. Dominic Thibault.**
+
+Final project for MUS6329X: Projects in Computer Music at the University of Montréal with Prof. Domonic Thibault.
+
+CantusSVS is a singing voice synthesis tool that automatically generates audio playback for the Latin chants in Cantus. You can access CantusSVS directly in the browser here [https://huggingface.co/spaces/liampond/CantusSVS-hf](https://huggingface.co/spaces/liampond/CantusSVS-hf). For training and inferencing, we use **DiffSinger**, a diffusion-based singing voice synthesis model described in the paper below:
 
 **DiffSinger: Singing Voice Synthesis via Shallow Diffusion Mechanism**  
 
