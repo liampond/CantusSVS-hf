@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [About CantusSVS](#about-cantussvs)
-- [Quick Start](#quick-start)
+- [Usage](#usage)
 - [Preparing Your Input](#preparing-your-input)
 - [Running Locally](#running-locally)
 - [FAQ](#faq)
@@ -29,7 +29,39 @@ The dataset used for this project was built using [*Adventus: Dominica prima adv
 
 ---
 
-## Quick Start
+## Usage
+
+1. Drop your `.mei` file into the upload area of the web app.
+
+2. Choose settings:
+   - Tempo (BPM)
+   - Output file name (optional)
+
+3. Hit "Synthesize" and download the resulting `.wav` file.
+
+Generated files:
+- `.wav`: final audio output
+- `.mel.npy`: intermediate mel-spectrogram
+- `.info.json`: metadata (phoneme sequence, note mapping)
+
+---
+
+## Preparing Your Input
+
+- Most commercial music composition software can export `.mei` files. MuseScore 4 is free to use.
+- Input format must be `.mei` (Music Encoding Initiative XML).
+- Only **monophonic** scores are supported (one staff, one voice).
+- Lyrics must be embedded in the MEI file and aligned with notes.
+
+Validation tool:
+
+```bash
+python scripts/validate_mei.py your_song.mei
+```
+
+---
+
+## Running Locally
 
 1. Clone the repository:
 
@@ -55,40 +87,6 @@ The dataset used for this project was built using [*Adventus: Dominica prima adv
     ```
     http://localhost:8501
     ```
-
-Or just use the hosted app here: [https://cantussvs.streamlit.app](https://cantussvs.streamlit.app)
-
----
-
-## Preparing Your Input
-
-- Most commercial music composition software can export `.mei` files. MuseScore 4 is free to use.
-- Input format must be `.mei` (Music Encoding Initiative XML).
-- Only **monophonic** scores are supported (one staff, one voice).
-- Lyrics must be embedded in the MEI file and aligned with notes.
-
-Validation tool:
-
-```bash
-python scripts/validate_mei.py your_song.mei
-```
-
----
-
-## Running Locally
-
-1. Drop your `.mei` file into the upload area of the web app.
-
-2. Choose settings:
-   - Tempo (BPM)
-   - Output file name (optional)
-
-3. Hit "Synthesize" and download the resulting `.wav` file.
-
-Generated files:
-- `.wav`: final audio output
-- `.mel.npy`: intermediate mel-spectrogram
-- `.info.json`: metadata (phoneme sequence, note mapping)
 
 ---
 
