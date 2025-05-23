@@ -11,7 +11,7 @@
 
 ## About CantusSVS
 
-CantusSVS is a singing voice synthesis tool that automatically generates audio playback for the Latin chants in Cantus. You can access CantusSVS directly in the browser here [**https://cantussvs.streamlit.app**](https://cantussvs.streamlit.app). For training and inferencing, we use **DiffSinger**, a diffusion-based singing voice synthesis model described in the paper below:
+CantusSVS is a singing voice synthesis tool that automatically generates audio playback for the Latin chants in Cantus. You can access CantusSVS directly in the browser here [**https://huggingface.co/spaces/liampond/CantusSVS-hf**](https://huggingface.co/spaces/liampond/CantusSVS-hf). For training and inferencing, we use **DiffSinger**, a diffusion-based singing voice synthesis model described in the paper below:
 
 **DiffSinger: Singing Voice Synthesis via Shallow Diffusion Mechanism**  
 
@@ -30,8 +30,8 @@ The dataset used for this project was built using [*Adventus: Dominica prima adv
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/CantusSVS.git
-    cd CantusSVS
+    git clone https://github.com/liampond/CantusSVS-hf.git
+    cd CantusSVS-hf
     ```
 
 2. Set up the environment:
